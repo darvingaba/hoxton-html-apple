@@ -3,27 +3,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 /* navbar */
 .navbar{
     background-color: #333333;
-    width: 100%;
+    width: 100vw;
     display: grid;
-    padding: 10px 0rem;
+    padding: 12px 0rem;
     place-items: center;
 }
 
 .navbar ul{
     display: grid;
     grid-auto-flow: column;
-    gap: 1rem;
+    gap: 2.5rem;
+    place-items: center;
     list-style: none;
 }
 .navbar a{
     text-decoration: none;
     color: #cecece;
+    font-size: 12px;
 }
-
+.navbar img{
+    height: 16px;
+    width: 16px;
+}
+.navbar a:hover{
+    color: #fff;
+}
+.navbar span{
+    font-size: 16px;
+}
 /* welcome links */
 .welcome{
     background-color: #f5f5f7;
@@ -63,18 +75,32 @@
     display: grid;
     place-items: center;
 }
+.iphone13pro h1,.iphone13 h1, .macbook h1{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+.iphone13pro h2,.iphone13 h2, .macbook h2{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+}
 /* iphone 13pro */
 
 .iphone13pro{
-    background-color: #f5f5f7;
-    width: 100%;
+    background-color: #fbfbfd;
     display: grid;
     place-items: center;
     z-index: -1;
 }
 .iphone13pro img{
     position: relative;
-    top: 22px; 
+    top: 5px; 
+}
+.iphone13pro h1{
+    margin-top: 1rem;
 }
 /* iphone13 */
 .iphone13{
@@ -84,4 +110,14 @@
     place-items: center;
     padding-top: 40px;
     gap: .2rem;
+}
+.iphone13 h1{
+    color: #f5f5f7;
+
+}
+.iphone13 h2{
+    color:#fdc1ea;
+}
+.iphone13 a{
+    margin-top: .5rem;
 }

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* navbar */
+.navbar{
+    background-color: #333333;
+    width: 100%;
+    display: grid;
+    padding: 10px 0rem;
+    place-items: center;
+}
+
+.navbar ul{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #cecece;
+}
+
+/* welcome links */
+.welcome{
+    background-color: #f5f5f7;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px 0rem;
+    place-items: center;
+}
+.welcome a{
+    color: #468fd9;
+    text-decoration: none;
+}
+.welcome p{
+    color: #8f8f91;
+}
+/* container */
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .8rem;
+}
+.container a{
+    text-decoration: none;
+    color: #468fd9; 
+}
+.links{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+.iphone13pro,.iphone13, .macbook{
+    background-color: #f5f5f7;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+/* iphone 13pro */
+
+.iphone13pro{
+    background-color: #f5f5f7;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+}
+.iphone13pro img{
+    position: relative;
+    top: 22px; 
+}
+/* iphone13 */
+.iphone13{
+    background-color: #35283c;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 40px;
+    gap: .2rem;
+}

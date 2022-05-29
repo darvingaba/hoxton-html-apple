@@ -23,7 +23,7 @@ body{
     display: grid;
     grid-auto-flow: column;
     gap: 2.5rem;
-    place-items: center;
+    place-items: center !important;
     list-style: none;
 }
 .navbar a{
@@ -132,35 +132,114 @@ body{
 .accessories{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, 33rem);
     gap: .6rem;
     /* place-items: center; */
-    margin-top: 1rem;
+    margin-top: .6rem;
 }
+/* airpods */
 .airpods{
     display: grid;
     place-items: center;
-    background-color: #468fd9;
+    background-color: #fbfbfd;
     z-index: -3;
+    padding-bottom: 2rem;
 }
 .airpods img{
     /* position: relative; */
     top: -65px;
     z-index: -1;
 }
-
+.airpods a{
+    text-decoration: none;
+    color: #468fd9;
+}
+.airpods h1{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+.airpods h2{
+    color: #232325b7;
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+/* apple watch */
 .apple-watch{
     text-align: center;
+    background-color: #fbfbfd;
+    padding-top: 2rem;
+    gap: 1rem;
 }
-.apple-watch img{
-    width: 2rem;
+.accessories .acc-logo{
     height: 2rem;
+    position: relative;
+    top: 4px;
 }
 .acc-title{
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-end: auto;
-    gap: 0rem;
     place-items: center;
-    padding: 0rem 10rem;
+    margin: .2rem 0rem;
+}
+.apple-watch span{
+    color: #db9a74;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+.apple-watch .series7{
+    color: #d23e43;
+    font-size: 12px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+}
+.apple-watch p{
+    color: #5e5e60;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin: .5rem 0rem;
+}
+.apple-watch a{
+    text-decoration: none;
+    color: #468fd9;
+}
+
+/* home pod */
+.homepod-mini{
+    place-items: center;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* ipad */
+.ipad-mini{
+    place-items: center;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+/* apple card */
+.apple-card{
+    place-items: center;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* apple tv */
+.apple-tv{
+    place-items: center;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding-top: 3rem;
 }

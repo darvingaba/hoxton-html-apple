@@ -10,7 +10,7 @@
 body{
     /* z-index: -5; */
     /* min-height: 100vh; */
-	width: 100vw;
+	/* width: 100vw; */
     height: 100vh;
     overflow: auto;
     left: 0;
@@ -20,7 +20,7 @@ body{
 /* navbar */
 .navbar{
     background-color: #333333;
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     padding: 12px 0rem;
     place-items: center;
@@ -51,7 +51,7 @@ body{
 /* welcome links */
 .welcome{
     background-color: #f5f5f7;
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     grid-auto-flow: column;
     padding: 10px 0rem;
@@ -67,7 +67,7 @@ body{
 /* container */
 
 .container{
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: .8rem;
@@ -83,7 +83,7 @@ body{
 }
 .iphone13pro,.iphone13, .macbook{
     background-color: #f5f5f7;
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     place-items: center;
 }
@@ -118,7 +118,7 @@ body{
 /* iphone13 */
 .iphone13{
     background-color: #35283c;
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     place-items: center;
     padding-top: 40px;
@@ -349,12 +349,12 @@ hr{
 .footer-links{
     display: grid;
     gap: 1rem;
-    place-items: center;
+    /* place-items: center; */
     grid-auto-flow: column;
 }
 .footer-links .first-col{
-    position: relative;
-    bottom: 2.5rem;
+    /* position: relative; */
+    /* bottom: 2.5rem; */
     display: grid;
     grid-auto-flow: row;
     text-align: start;
@@ -368,8 +368,8 @@ hr{
     letter-spacing: 0em;
 }
 .second-col{
-    position: relative;
-    top: 0.6rem;
+    /* position: relative; */
+    /* top: 0.6rem; */
     display: grid;
     grid-auto-flow: row;
     text-align: start;
@@ -381,8 +381,8 @@ hr{
     gap: .5rem;
 }
 .third-col{
-    position: relative;
-    bottom: .9rem;
+    /* position: relative; */
+    /* bottom: .9rem; */
     display: grid;
     grid-auto-flow: row;
     text-align: start;
@@ -400,8 +400,8 @@ hr{
     gap: .5rem;
 }
 .fifth-col{
-    position: relative;
-    bottom: .4rem;
+    /* position: relative; */
+    /* bottom: .4rem; */
     display: grid;
     grid-auto-flow: row;
     text-align: start;
@@ -436,4 +436,9 @@ hr{
         display: block;
     }   
 
+}
+.material-symbols-outlined{
+    display: grid !important;
+    align-items: center;
+    /* background-color: #468fd9; */
 }

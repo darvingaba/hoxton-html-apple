@@ -28,7 +28,7 @@ body{
 .navbar.mobile{
     display: none;
 }
-.navbar.mobile a {
+.navbar.mobile ul {
     justify-content: space-between;
 }
 .navbar ul{

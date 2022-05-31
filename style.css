@@ -23,15 +23,24 @@ body{
     display: grid;
     padding: 12px 0rem;
     place-items: center;
+    position: sticky;
 }
-
+.navbar.mobile{
+    display: none;
+}
+.navbar.mobile a {
+    justify-content: space-between;
+}
 .navbar ul{
     display: grid;
     grid-auto-flow: column;
-    gap: 2.5rem;
-    place-items: center !important;
     list-style: none;
+    padding: 0.7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
 }
+
 .navbar a{
     display: grid;
     grid-auto-flow: column;
@@ -113,7 +122,18 @@ body{
     place-items: center;
     z-index: -1;
     /* width: 100%;  */
+    /* background: url(/img/iphone\ 13\ pro\ bg.jpg);
+    background-size: 1000px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-color: #fbfbfd;
+    padding: 1rem;
+    padding-top: 3rem;
 
+    display: grid;
+    align-content: start;
+    gap: 0.5rem; */
 }
 .iphone13pro img{
     position: relative;
@@ -451,23 +471,27 @@ footer a{
     }
 }
 @media screen and (max-width:950px) {
-    .navbar li{
+    .navbar{
     display: none;
     }
-    .navbar img{
-        visibility: visible;
+    .navbar.mobile{
+        display: block;
+        justify-content: space-between;
+    }
+    .container{
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0rem;
     }   
-
 }
 @media screen and(max-width:700px){
     .iphone13pro {
     width: 100%; 
     }
-    .navbar{
-        width: 100vw;
-
-    }
     .welcome{
         display: none;
+    }
+    .container{
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0rem;
     }
 }
